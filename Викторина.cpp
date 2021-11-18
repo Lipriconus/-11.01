@@ -1916,6 +1916,8 @@ void showQuestionsVoid()
 	cout << "[38] Когда пала Берлинская стена?" << "\t" << "Ответ:1989" << endl;
 	cout << "[39] Как долго длилась Столетняя война?" << "\t" << "Ответ:116лет" << endl;
 	cout << "[40] Какая страна является самой маленькой в мире?" << "\t" << "Ответ:Ватикан" << endl;
+	cout << "[41] Когда родился великий российский писатиль А.С.Пушкин?" << "\t" << "Ответ: 6 июня 1799 года" << endl;
+
 
 
 	cout << "\n\nЧтобы вернуться в меню нажмите любую клавишу" << endl;
@@ -2770,14 +2772,14 @@ void play9L20Q20TVoid()
 			if (answer == 'd')
 			{
 				rightAnswer = rightAnswer + 1;
-				cout << "\n\x1b[92mЭто правильный ответ!\n" << reset << endl;
+				cout << "\n\x1b[92mЭто верный ответ!\n" << reset << endl;
 			}
 			else
 			{
 				wrongAnswer == wrongAnswer + 1;
 				lives = lives - 1;
-				cout << "\n\x1b[91mЭто неправильный ответ!" << reset << endl;
-				cout << "У вас осталось " << lives << " жизней\n" << endl;
+				cout << "\n\x1b[91mЭто неверный ответ!" << reset << endl;
+				cout << "У вас  " << lives << " жизней\n" << endl;
 			}
 		}
 
@@ -2785,13 +2787,13 @@ void play9L20Q20TVoid()
 
 		if (lives == 0)
 		{
-			cout << "\nВы проиграли,начните игру заново" << endl;
+			cout << "\nВы проиграли,предлагаем пройти викторину заново =)" << endl;
 			break;
 		}
 		if (rightAnswer == 20 || (rightAnswer == 19 && wrongAnswer == 1) || (rightAnswer == 18 && wrongAnswer == 2) || (rightAnswer == 17 && wrongAnswer == 3) || (rightAnswer == 16 && wrongAnswer == 4)
 			|| (rightAnswer == 15 && wrongAnswer == 5) || (rightAnswer == 14 && wrongAnswer == 6) || (rightAnswer == 13 && wrongAnswer == 7) || (rightAnswer == 12 && wrongAnswer == 8) || (rightAnswer == 11 && wrongAnswer == 9))
 		{
-			cout << "\nВы победили, можете начать новую игру!!!" << endl;
+			cout << "\nВы победили, сыграйте еще раз!!!" << endl;
 			break;
 		}
 
