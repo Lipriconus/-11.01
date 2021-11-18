@@ -1,5 +1,6 @@
 #include <iostream>
 #include <ctime>
+#include <string>
 #include <Windows.h>
 
 using namespace std;
@@ -101,6 +102,16 @@ int main()
 
 }
 
+
+
+void showRulesVoid()
+{
+	system("cls");
+	cout << "Если Вы выбрали неправильный ответ, то у Вас -1 балл" << endl;
+	cout << "Вам на выбор представлено 3 режима игры:\n[1]\n - 10 минут\n - 5 жизней\n - 10 вопросов\n\n[2]\n - 15 минут\n - 7 жизней\n - 15 вопросов\n\n[3]\n - 20 минут\n - 9 жизней\n - 20 вопросов  " << endl;
+	cout << "Если Вы выйдете из игры, то потеряете все набранные баллы" << endl;
+}
+
 void showSettingsVoid()
 {
 	system("cls");
@@ -113,13 +124,9 @@ void showSettingsVoid()
 	cin >> gameMode;
 }
 
-void showRulesVoid()
-{
-	system("cls");
-	cout << "Если Вы выбрали неправильный ответ, то у Вас -1 балл" << endl;
-	cout << "Вам на выбор представлено 3 режима игры:\n[1]\n - 10 минут\n - 5 жизней\n - 10 вопросов\n\n[2]\n - 15 минут\n - 7 жизней\n - 15 вопросов\n\n[3]\n - 20 минут\n - 9 жизней\n - 20 вопросов  " << endl;
-	cout << "Если Вы выйдете из игры, то потеряете все набранные баллы" << endl;
-}
+
+
+
 void play5L10Q10TVoid()
 {
 	system("cls");
