@@ -19,7 +19,7 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 
-	cout << "[ - ]Программа - Викторина" << endl;
+	cout << "[ - ] Викторина" << endl;
 	int action;
 
 	bool exit = true;
@@ -1102,7 +1102,7 @@ void play7L15Q15TVoid()
 		else if (arr[i] == 3)
 		{
 			cout << "[ - ] Какое национальное животное Австралии?" << endl;
-			cout << "a)Красный кенгуру\t\tc)Синий Кенгуру\nb)Черный кенгуру\t\td)Кориченый кенгуру" << endl;
+			cout << "a)Красный кенгуру\t\tc)Синий Кенгуру\nb)Коала\t\td)Крокодил" << endl;
 			cout << "-->" << endl;
 			cin >> answer;
 			if (answer == 'a')
